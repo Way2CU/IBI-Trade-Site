@@ -6,17 +6,17 @@ All of these need to be checked manually, changed and then committed. System wil
 	- [ ] `system_init.xml` file contains all the modules used;
 	- [ ] Deployment script `group_vars/all` file is configured;
 	- [ ] Deployment `hosts.txt` file is configured;
-	- [ ] All the languages site is targeting are configured in `config.php`;
+	- [x] All the languages site is targeting are configured in `config.php`;
 	- [ ] Site title is properly defined;
 	- [ ] No errors or warnings are reported in the log file;
-	- [ ] Templates for registering and recovering user password are created and selected;
+	> - [x] Templates for registering and recovering user password are created and selected;
 	- [ ] PNG images are optimized using `optipng` command;
 	- [ ] JPEG images are converted from original PNG and optimized using `guetzli` command;
 	- [ ] SVG images are cleaned and optimized;
 	- [ ] Site has favicon specified in different sizes (16, 32, 64);
 	- [ ] All active elements of the site have `:hover` and `:focus` styles defined;
 	- [ ] Site has copyright;
-	- [ ] `README.md` file updated appropriately with licensing information;
+	- [x] `README.md` file updated appropriately with licensing information;
 	- [ ] Code in `main.js` targets all pages. Code meant for individual pages is in separate files;
 	- [ ] Styles are written to target LTR by default with RTL modifications, even on RTL-only sites.
 - Contact form:
@@ -30,10 +30,10 @@ All of these need to be checked manually, changed and then committed. System wil
 	- [ ] Templates have subject properly defined;
 	- [ ] Form submits and client/developer receives email.
 - Shop:
-	- [ ] Desired payment method is enabled and configured;
-	- [ ] Default warehouse is created;
-	- [ ] Default currency is selected;
-	- [ ] Contact form template for transaction is created and selected;
-	- [ ] Shop is not in testing mode.
+	> - [x] Desired payment method is enabled and configured;
+	> - [x] Default warehouse is created;
+	> - [x] Default currency is selected;
+	> - [x] Contact form template for transaction is created and selected;
+	> - [x] Shop is not in testing mode.
 - Articles:
 	- [ ] Each article has a title even if it's not used;
