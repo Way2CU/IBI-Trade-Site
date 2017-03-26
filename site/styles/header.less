@@ -1,0 +1,51 @@
+/**
+ * Header Style Sheet
+ * IBI-Trade lp
+ *
+ * Copyright (c) 2017. by Way2CU, http://way2cu.com
+ * Authors: Iliya Melishev
+ */
+
+header {
+	padding: 0 calc(~'(100% - 1200px)' / 2);
+	background-color: white;
+}
+
+header nav {
+	text-align: center;
+}
+
+header nav a {
+	display: inline-block;
+	vertical-align: middle;
+	color: @color_text;
+	text-align: center;
+	text-decoration: none;
+	line-height: 100%;
+	font-size: 1.3em;
+	border: 1px solid fade(@color_menu_active, 50%);
+	padding: 2em;
+	translate: all 0.3s;
+
+	&:hover {
+		background-color: @color_gold;
+		color: white;
+	}
+
+	&.account {
+		background-color: @color_gold;
+		color: white;
+	}
+}
+
+header a.logo {
+	padding: 0;
+}
+
+header a.logo svg {
+	width: 60px;
+	height: 60px;
+	display: block;
+	margin: 0 auto;
+	padding: 1em 2.6em;
+}
