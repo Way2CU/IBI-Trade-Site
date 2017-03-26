@@ -6,6 +6,10 @@
  * Authors: Iliya Melishev
  */
 
+h1, h2, h3, h4, h5 {
+	color: @color_blue;
+}
+
 .account-link(@text_color: @color_white) {
 	padding: 1em 1.5em;
 	border: 2px solid @color_gold;
@@ -54,6 +58,7 @@ section.open_account article h1 {
 	font-size: 4em;
 	line-height: 100%;
 	padding-top: 0.5em;
+	color: @color_white;
 }
 
 section.open_account article h1 strong {
@@ -92,7 +97,6 @@ section.features h2 {
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 100px;
-	color: @color_blue;
 }
 
 section.features a.account {
@@ -143,6 +147,91 @@ section.features ul li svg {
 }
 
 section.features ul li h4 {
-	color: @color_blue;
 	font-weight: 400;
+}
+
+
+/*
+ * Benefits
+*/
+
+section.benefits {
+	padding: 0 calc(~'(100% - 1200px)' / 2);
+	background-image: url(../images/macbook.png), url(../images/benefits.jpg);
+	background-position: center 80%, center top;
+	background-repeat: no-repeat;
+	color: @color_text;
+	min-height: 900px;
+}
+
+section.benefits h1 {
+	margin: 0;
+	text-align: center;
+	padding-top: 100px;
+}
+
+section.benefits article {
+	@image_size: 550;
+	@spacing: 25;
+
+	display: inline-block;
+	max-width: unit((1200 - @image_size) / 2 - @spacing, px);
+	vertical-align: middle;
+	padding-top: 2em;
+	text-align: center;
+
+	&:nth-of-type(even) {
+		margin-left: unit(@image_size + @spacing * 2, px);
+	}
+
+	&:first-of-type {
+		display: block;
+		max-width: unit(@image_size, px);
+		margin: 0 auto;
+	}
+}
+
+section.benefits article h3 {
+	margin: 0;
+}
+
+@step: 0.5;
+svg.open {
+	path:nth-of-type(2),
+	path:nth-of-type(3) {
+		.animation-fly-in(@step, @step * 2);
+	}
+
+	path:nth-of-type(4) {
+		.animation-fade-in(@step, 0);
+	}
+
+	path:nth-of-type(5) {
+		.animation-fade-in(@step, @step);
+	}
+}
+
+@delay: @step * 3;
+svg.id {
+	g.body {
+		.animation-fade-in(@step, @delay);
+	}
+
+	g.lines path {
+		@t: 0.1;
+		transform-origin: 0% 50%;
+
+		&:nth-of-type(1) {.animation-scale-horizontal(@step, @delay + @t * 1);}
+		&:nth-of-type(2) {.animation-scale-horizontal(@step, @delay + @t * 2);}
+		&:nth-of-type(3) {.animation-scale-horizontal(@step, @delay + @t * 3);}
+		&:nth-of-type(4) {.animation-scale-horizontal(@step, @delay + @t * 4);}
+		&:nth-of-type(5) {.animation-fade-in(@step, @delay + @t * 5);}
+	}
+}
+
+@delay2: @delay + (3.5 * @step);
+svg.forms {
+	path {
+		&:nth-of-type(2) {.animation-fade-in(@step, @delay2);}
+	}
 }
