@@ -1,0 +1,11 @@
+<document>
+	<li class="stock feature">
+		<cms:svg
+			file="'icons/'.$params['text_id'].'.svg'"
+			cms:eval="file"
+			/>
+
+		<h4><cms:var param="title" multilanguage="yes"/></h4>
+		<cms:markdown param="content" multilanguage="yes"/>
+	</li>
+</document>
