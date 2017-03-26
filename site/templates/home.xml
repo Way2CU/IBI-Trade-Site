@@ -8,6 +8,11 @@
 		</head>
 
 		<body>
+			<!-- Generic Header -->
+			<cms:template file="stock/header_generic.xml">
+				<param name="fixed" value=""/>
+				<param name="menu" value="parts/menu_items.xml"/>
+			</cms:template>
 		</body>
 	</html>
 </document>
