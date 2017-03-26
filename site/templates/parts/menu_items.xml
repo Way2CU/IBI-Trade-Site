@@ -1,0 +1,23 @@
+<document>
+	<a href="#somewhere">
+		<cms:text constant="menu_sign_in"/>
+	</a>
+	<a href="#somewhere">
+		<cms:text constant="menu_benefits"/>
+	</a>
+	<a href="#somewhere">
+		<cms:text constant="menu_why"/>
+	</a>
+	<a href="#somewhere">
+		<cms:text constant="menu_trade"/>
+	</a>
+	<a href="#somewhere" class="account">
+		<cms:text constant="menu_account"/>
+	</a>
+
+	<a href="#" class="logo">
+		<cms:svg file="site-sprite.svg" symbol="icon-ibi-trade-logo" />
+	</a>
+</document>
+
+
