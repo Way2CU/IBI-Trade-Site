@@ -5,3 +5,65 @@
  * Copyright (c) 2017. by Way2CU, http://way2cu.com
  * Authors: Iliya Melishev
  */
+
+section.open_account {
+	padding: 0 calc(~'(100% - 1200px)' / 2);
+	background-image: url(../images/header.jpg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	min-height: 700px;
+	color: @color_white;
+	padding-top: 105px;
+}
+
+section.open_account article {
+	display: block;
+	width: 30%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+section.open_account article h1 {
+	margin: 0;
+	font-weight: 400;
+	font-size: 4em;
+	line-height: 100%;
+	padding-top: 0.5em;
+}
+
+section.open_account article h1 strong {
+	font-weight: 700;
+}
+
+section.open_account article:first-of-type p {
+	font-size: 1.5em;
+	margin: 0;
+	padding: 1em 0;
+}
+
+section.open_account article p {
+	font-size: 1.2em;
+}
+
+section.open_account a.account {
+	display: block;
+	width: 150px;
+	margin: 0 auto;
+
+	text-align: center;
+	font-size: 1.2em;
+	background-color: transparent;
+	color: @color_white;
+	font-weight: 700;
+	border: 2px solid @color_gold;
+	padding: 1em 1.5em;
+	text-decoration: none;
+	border-radius: 25px;
+	transition: all 0.3s;
+
+	&:hover {
+		background-color: @color_gold;
+		color: @color_white;
+		border: 2px solid @color_white;
+	}
+}
