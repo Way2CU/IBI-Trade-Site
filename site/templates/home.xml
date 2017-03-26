@@ -13,6 +13,31 @@
 				<param name="fixed" value=""/>
 				<param name="menu" value="parts/menu_items.xml"/>
 			</cms:template>
+
+			<!-- Main section -->
+			<section class="open_account">
+				<!-- Main article with h1 -->
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="account_open_section"
+					template="stock/article_generic.xml"
+					/>
+
+				<!-- Link to outside url -->
+					<a href="#somewhere" class="account">
+						<cms:text constant="link_account_open" />
+					</a>
+
+				<!-- Second article on main section -->
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="account_open_second"
+					template="stock/article_generic.xml"
+					/>
+			</section>
+
 		</body>
 	</html>
 </document>
