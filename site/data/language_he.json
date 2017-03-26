@@ -1,3 +1,8 @@
 {
-    "site_title": "IBI-Trade"
+    "site_title": "IBI-Trade",
+    "menu_sign_in": "איך נרשמים",
+    "menu_benefits": "יתרונות השירות",
+    "menu_why": "למה IBI ?",
+    "menu_trade": "מה זה מסחר עצמאי?",
+    "menu_account": "פתיחת חשבון"
 }
