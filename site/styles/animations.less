@@ -1,0 +1,63 @@
+/**
+ * Icon Animations Stylesheet
+ * IBI-Trade Landing Page
+ *
+ * Copyright (c) 2017. by Way2CU, http://way2cu.com
+ * Authors: Iliya Melishev, Mladen Mijatov
+ */
+
+ @keyframes fly-in {
+ 	from {
+		opacity: 0;
+		transform: translate(20px, 20px);
+ 	}
+
+ 	to {
+		opacity: 1;
+		transform: translate(0, 0);
+ 	}
+ }
+
+.animation-fly-in(@duration, @delay) {
+	animation-fill-mode: backwards;
+	animation-name: fly-in;
+	animation-duration: unit(@duration, s);
+	animation-delay: unit(@delay, s);
+	animation-iteration-count: 1;
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.animation-fade-in(@duration; @delay) {
+	animation-fill-mode: backwards;
+	animation-name: fade-in;
+	animation-duration: unit(@duration, s);
+	animation-delay: unit(@delay, s);
+	animation-iteration-count: 1;
+}
+
+@keyframes scale-horizontal {
+	from {
+		transform: scaleX(0);
+	}
+
+	to {
+		transform: scaleX(1);
+	}
+}
+
+.animation-scale-horizontal(@duration; @delay) {
+	animation-fill-mode: backwards;
+	animation-name: scale-horizontal;
+	animation-duration: unit(@duration, s);
+	animation-delay: unit(@delay, s);
+	animation-iteration-count: 1;
+}
