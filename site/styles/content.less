@@ -6,6 +6,31 @@
  * Authors: Iliya Melishev
  */
 
+.account-link(@text_color: @color_white) {
+	padding: 1em 1.5em;
+	border: 2px solid @color_gold;
+	border-radius: 35px;
+	background-color: transparent;
+
+	color: @text_color;
+	font-size: 1.2em;
+	font-weight: 700;
+	text-decoration: none;
+
+	transition: all 0.3s;
+
+	&:hover {
+		border-color: @color_white;
+		background-color: @color_gold;
+		color: @color_white;
+	}
+}
+
+
+/*
+ * Open_account
+*/
+
 section.open_account {
 	padding: 0 calc(~'(100% - 1200px)' / 2);
 	background-image: url(../images/header.jpg);
@@ -46,24 +71,78 @@ section.open_account article p {
 }
 
 section.open_account a.account {
+	.account-link();
+
 	display: block;
 	width: 150px;
 	margin: 0 auto;
-
 	text-align: center;
-	font-size: 1.2em;
-	background-color: transparent;
-	color: @color_white;
-	font-weight: 700;
-	border: 2px solid @color_gold;
-	padding: 1em 1.5em;
-	text-decoration: none;
-	border-radius: 25px;
-	transition: all 0.3s;
+}
 
-	&:hover {
-		background-color: @color_gold;
-		color: @color_white;
-		border: 2px solid @color_white;
-	}
+/*
+ * Features
+*/
+
+section.features {
+	padding: 0 calc(~'(100% - 1200px)' / 2);
+	text-align: center;
+}
+
+section.features h2 {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 100px;
+	color: @color_blue;
+}
+
+section.features a.account {
+	.account-link(@color_gold);
+}
+
+section.features ul {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	padding-top: 1em;
+}
+
+section.features ul li {
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	text-align: center;
+	position: relative;
+	box-sizing: border-box;
+	padding: 0 1em;
+}
+
+section.features ul li:after {
+	content: '';
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	top: 64px;
+	left: -20px;
+	transform: translateY(-50%);
+
+	background-image: url(../images/arrow.svg);
+	background-size: 50px 50px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+section.features ul li:last-of-type:after {
+	display: none;
+}
+
+section.features ul li svg {
+	display: block;
+	margin: 0 auto;
+	width: 8em;
+	height: 8em;
+}
+
+section.features ul li h4 {
+	color: @color_blue;
+	font-weight: 400;
 }
