@@ -53,12 +53,24 @@
 						name="articles"
 						action="show_list"
 						group="features"
-						template="stock/features_generic.xml"
+						template="parts/features.xml"
 						>
-						<param name="sprite" value="site-sprite.svg"/>
-						<param name="title" value=""/>
 					</cms:module>
 				</ul>
+			</section>
+
+			<!-- Section benifits -->
+			<section class="benefits">
+				<h1><cms:text constant="benefits_title" /></h1>
+				<cms:module
+					name="articles"
+					action="show_list"
+					group="benefits"
+					template="stock/article_generic.xml"
+					>
+					<param name="title" value=""/>
+					<param name="title_tag" value="h3"/>
+				</cms:module>
 			</section>
 
 		</body>
