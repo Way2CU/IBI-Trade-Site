@@ -15,9 +15,11 @@
 		<cms:text constant="menu_account"/>
 	</a>
 
-	<a href="#" class="logo">
-		<cms:svg file="site-sprite.svg" symbol="icon-ibi-trade-logo" />
-	</a>
+	<cms:desktop>
+		<a href="#" class="logo">
+			<cms:svg file="site-sprite.svg" symbol="icon-ibi-trade-logo" />
+		</a>
+	</cms:desktop>
 </document>
 
 
