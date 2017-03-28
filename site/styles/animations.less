@@ -84,8 +84,15 @@
 
 
 @keyframes rotate {
-	0% {transfrom: rotate(0);}
-	15% {transform: rotate(5deg);}
+	0% {
+		transfrom: rotate(0);
+		opacity: 0;
+	}
+
+	15% {
+		transform: rotate(5deg);
+		opacity: 1;
+	}
 	35% {transform: rotate(15deg);}
 	50% {transfrom: rotate(20deg);}
 	65% {transform: rotate(5deg);}
