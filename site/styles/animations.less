@@ -61,3 +61,43 @@
 	animation-delay: unit(@delay, s);
 	animation-iteration-count: 1;
 }
+
+@keyframes scale-fade {
+	from {
+		transform: scale(0);
+		opacity: 0;
+	}
+
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.animation-scale-fade(@duration; @delay) {
+	animation-fill-mode: backwards;
+	animation-name: scale-fade;
+	animation-duration: unit(@duration, s);
+	animation-delay: unit(@delay, s);
+	animation-iteration-count: 1;
+}
+
+
+@keyframes rotate {
+	0% {transfrom: rotate(0);}
+	15% {transform: rotate(5deg);}
+	35% {transform: rotate(15deg);}
+	50% {transfrom: rotate(20deg);}
+	65% {transform: rotate(5deg);}
+	95% {transform: rotate(15deg);}
+	100% {transform: rotate(0deg);}
+}
+
+.animation-rotate (@duration, @delay){
+	animation-fill-mode: backwards;
+	animation-name: rotate;
+	animation-duration: unit(@duration, s);
+	animation-delay: unit(@delay, s);
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+}
