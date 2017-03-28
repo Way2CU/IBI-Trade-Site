@@ -366,3 +366,49 @@ section.why_ibi article h1,
 section.why_ibi article h2 {
 	margin: 0;
 }
+
+/*
+ * Footer
+*/
+
+footer {
+	padding: 0 calc(~'(100% - 1200px)' / 2);
+	background-image: url(../images/footer.jpg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	min-height: 700px;
+}
+
+footer article {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 8em;
+}
+
+footer article h3 {
+	color: @color_text;
+}
+
+footer div.footer_information {
+	width: 30%;
+	margin: auto;
+	margin-right: 0;
+	padding-bottom: 300px;
+	text-align: center;
+}
+
+footer div.footer_information > a svg {
+	width: 7em;
+	height: 7em;
+}
+
+footer div.footer_information h3 {
+	margin: 0;
+}
+
+footer div.footer_information a:last-of-type {
+	.account-link(@color_gold);
+	display: inline-block;
+	margin-top: 1em;
+}
