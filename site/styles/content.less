@@ -247,3 +247,40 @@ svg.forms {
 		&:nth-of-type(4) { .animation-scale-horizontal(@step, @delay2 + @step + @t * 4); }
 	}
 }
+
+@delay3: @delay2 + @step * 3;
+svg.chat {
+	g.person {
+		transform-origin: 50% 50%;
+		.animation-scale-fade(@step, @delay3);
+	}
+
+	g.bubble {
+		transform-origin: 50% 50%;
+		.animation-scale-fade(@step, @delay3 + @step);
+	}
+
+}
+
+@delay4: @delay3 + @step * 4;
+svg.sign {
+	@t: 0.1;
+	g.paper {
+		transform-origin: 50% 50%;
+		.animation-scale-fade(@step, @delay4);
+	}
+
+	g.pen {
+		transform-origin: 100% 50%;
+		.animation-rotate(@step, @delay4 + @step);
+	}
+
+	g.pen-lines path {
+		transform-origin: 100% 100%;
+		&:nth-of-type(1) { .animation-scale-horizontal(@step, @delay4 + @step + @step + @t * 1); }
+		&:nth-of-type(2) { .animation-scale-horizontal(@step, @delay4 + @step + @step + @t * 2); }
+		&:nth-of-type(3) { .animation-scale-horizontal(@step, @delay4 + @step + @step + @t * 3); }
+		&:nth-of-type(4) { .animation-scale-horizontal(@step, @delay4 + @step + @step + @t * 4); }
+	}
+
+}
