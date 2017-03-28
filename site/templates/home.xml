@@ -9,10 +9,21 @@
 
 		<body>
 			<!-- Generic Header -->
-			<cms:template file="stock/header_generic.xml">
-				<param name="fixed" value=""/>
-				<param name="menu" value="parts/menu_items.xml"/>
-			</cms:template>
+			<cms:desktop>
+				<cms:template file="stock/header_generic.xml">
+					<param name="fixed" value=""/>
+					<param name="menu" value="parts/menu_items.xml"/>
+				</cms:template>
+			</cms:desktop>
+			<cms:mobile>
+				<cms:template file="stock/header_generic.xml">
+					<param name="logo_sprite_icon" value="icon-ibi-trade-logo"/>
+					<param name="sprite" value="site-sprite.svg"/>
+					<param name="mobile_menu_sprite_icon" value="icon-menu"/>
+					<param name="menu" value="parts/menu_items.xml"/>
+					<param name="fixed" value=""/>
+				</cms:template>
+			</cms:mobile>
 
 			<!-- Main section -->
 			<section class="open_account">
@@ -73,6 +84,23 @@
 				</cms:module>
 
 				<!-- Section services -->
+				<cms:desktop>
+					<div class="services">
+						<cms:module
+							name="articles"
+							action="show"
+							text_id="services"
+							template="stock/article_generic.xml"
+							>
+							<param name="title_tag" value="h2"/>
+							<param name="title" value=""/>
+						</cms:module>
+					</div>
+				</cms:desktop>
+			</section>
+
+			<!-- Section services Mobile -->
+			<cms:mobile>
 				<div class="services">
 					<cms:module
 						name="articles"
@@ -84,7 +112,8 @@
 						<param name="title" value=""/>
 					</cms:module>
 				</div>
-			</section>
+			</cms:mobile>
+
 
 			<!-- Section why IBI -->
 			<section class="why_ibi">
