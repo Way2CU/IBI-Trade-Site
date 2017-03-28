@@ -300,7 +300,6 @@ section.benefits div.services h2 {
 
 section.benefits div.services article ul {
 	display: block;
-	padding: 0;
 	margin: 0;
 }
 
@@ -411,4 +410,39 @@ footer div.footer_information a:last-of-type {
 	.account-link(@color_gold);
 	display: inline-block;
 	margin-top: 1em;
+}
+
+/*
+ * Ipad query
+*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	section {
+		padding: 1em;
+	}
+
+	section.benefits {
+		padding: 1em;
+		background-position: center 45%, 60% top;
+		background-size: 350px 350px, 1920px 900px;
+	}
+
+	section.benefits > article:nth-of-type(even) {
+		margin-left: 340px;
+	}
+
+	section.benefits div.services {
+		padding-top: 100px;
+	}
+
+	section.why_ibi {
+		padding: 1em;
+	}
+
+	footer {
+		padding: 1em;
+	}
+
+	footer div.footer_information {
+		margin-right: 1em;
+	}
 }
