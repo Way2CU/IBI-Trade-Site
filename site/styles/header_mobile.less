@@ -1,0 +1,57 @@
+/**
+ * Main_mobile Style Sheet
+ * IBI-Trade lp
+ *
+ * Copyright (c) 2017. by Way2CU, http://way2cu.com
+ * Authors: Iliya Melishev
+ */
+
+header.mobile_title {
+	background-color: white;
+}
+
+header a.menu {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 1em;
+	padding-right: 0;
+}
+
+header a.menu svg {
+	display: block;
+	width: 2em;
+	height: 2em;
+}
+
+header a.logo {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+header a.logo svg {
+	display: block;
+	width: 3em;
+	height: 3em;
+}
+
+div.mobile_menu.visible {
+	width: 100%;
+}
+
+div.mobile_menu nav {
+	text-align: center;
+}
+
+div.mobile_menu nav a {
+	border: 1px solid fade(@color_gold, 50%);
+	border-bottom: none;
+	font-size: 1.3em;
+}
+
+div.mobile_menu nav a:last-of-type {
+	border: 1px solid fade(@color_gold, 50%);
+	background-color: @color_gold;
+	color: white;
+}
