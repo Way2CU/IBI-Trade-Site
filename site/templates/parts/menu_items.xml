@@ -8,7 +8,7 @@
 	<a href="#why_ibi">
 		<cms:text constant="menu_why"/>
 	</a>
-	<a href="#trade">
+	<a href="#footer">
 		<cms:text constant="menu_trade"/>
 	</a>
 	<a href="#somewhere" class="account">
