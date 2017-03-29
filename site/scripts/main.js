@@ -51,6 +51,38 @@ Site.is_mobile = function() {
 Site.on_load = function() {
 	if (Site.is_mobile())
 		Site.mobile_menu = new Caracal.MobileMenu();
+
+	// implement scroll event
+	Site.links = document.querySelectorAll('nav#main a:not(.account)');
+	Site.offsets = new Array();
+	Site.sections = document.querySelectorAll('section');
+	Site.active_index = 0;
+
+	// section offsets
+	for (var i=0, count=Site.sections.length; i < count; i++)
+		Site.offsets.push(Site.sections[i].offsetTop);
+
+	window.addEventListener('scroll', function(event){
+		var position = window.scrollY + 200;
+		var section_index = 0;
+		var offsets = Site.offsets;
+
+		for (var i=0, count = offsets.length; i<count; i++) {
+			if (offsets[i] >= position)
+				break;
+			section_index = i;
+		}
+
+		console.log(section_index);
+
+		if (Site.active_index != section_index) {
+			Site.links[Site.active_index].classList.remove('active');
+			Site.sections[Site.active_index].classList.remove('active');
+			Site.links[section_index].classList.add('active');
+			Site.sections[section_index].classList.add('active');
+			Site.active_index = section_index;
+		}
+	});
 };
 
 

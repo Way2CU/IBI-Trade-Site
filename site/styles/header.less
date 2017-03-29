@@ -13,6 +13,7 @@ header {
 
 header nav {
 	text-align: center;
+	position: relative;
 }
 
 header nav a {
@@ -36,10 +37,17 @@ header nav a {
 		background-color: @color_gold;
 		color: white;
 	}
+
+	&.active {
+		background-color: @color_menu_active;
+	}
 }
 
 header a.logo {
-	padding: 0;
+	position: absolute;
+	left: calc(~'(50% - 600px)');
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 header a.logo svg {

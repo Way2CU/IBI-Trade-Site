@@ -8,13 +8,17 @@
 		</head>
 
 		<body>
-			<!-- Generic Header -->
+			<!-- Generic header -->
 			<cms:desktop>
 				<cms:template file="stock/header_generic.xml">
 					<param name="fixed" value=""/>
 					<param name="menu" value="parts/menu_items.xml"/>
+					<param name="logo_sprite_icon" value="icon-ibi-trade-logo"/>
+					<param name="sprite" value="site-sprite.svg"/>
 				</cms:template>
 			</cms:desktop>
+
+			<!-- Generic header mobile -->
 			<cms:mobile>
 				<cms:template file="stock/header_generic.xml">
 					<param name="logo_sprite_icon" value="icon-ibi-trade-logo"/>
@@ -26,7 +30,7 @@
 			</cms:mobile>
 
 			<!-- Main section -->
-			<section class="open_account">
+			<section id="open_account">
 				<!-- Main article with h1 -->
 				<cms:module
 					name="articles"
@@ -50,7 +54,7 @@
 			</section>
 
 			<!-- Section features -->
-			<section class="features">
+			<section id="features">
 				<h2><cms:text constant="how_to_sign_in" /></h2>
 
 				<!-- Link to outside url -->
@@ -71,7 +75,7 @@
 			</section>
 
 			<!-- Section benifits -->
-			<section class="benefits">
+			<section id="benefits">
 				<h1><cms:text constant="benefits_title" /></h1>
 				<cms:module
 					name="articles"
@@ -116,7 +120,7 @@
 
 
 			<!-- Section why IBI -->
-			<section class="why_ibi">
+			<section id="why_ibi">
 				<cms:module
 					name="articles"
 					action="show"
