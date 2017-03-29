@@ -88,29 +88,29 @@ section#open_account a.account {
  * Features
 */
 
-section#features {
+div#features {
 	padding: 0 calc(~'(100% - 1200px)' / 2);
 	text-align: center;
 }
 
-section#features h2 {
+div#features h2 {
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 100px;
 }
 
-section#features a.account {
+div#features a.account {
 	.account-link(@color_gold);
 }
 
-section#features ul {
+div#features ul {
 	margin: 0 auto;
 	padding: 0;
 	list-style: none;
 	padding-top: 1em;
 }
 
-section#features ul li {
+div#features ul li {
 	display: inline-block;
 	vertical-align: top;
 	width: 20%;
@@ -120,7 +120,7 @@ section#features ul li {
 	padding: 0 1em;
 }
 
-section#features ul li:after {
+div#features ul li:after {
 	content: '';
 	position: absolute;
 	height: 50px;
@@ -135,18 +135,18 @@ section#features ul li:after {
 	background-repeat: no-repeat;
 }
 
-section#features ul li:last-of-type:after {
+div#features ul li:last-of-type:after {
 	display: none;
 }
 
-section#features ul li svg {
+div#features ul li svg {
 	display: block;
 	margin: 0 auto;
 	width: 8em;
 	height: 8em;
 }
 
-section#features ul li h4 {
+div#features ul li h4 {
 	font-weight: 400;
 }
 
@@ -194,7 +194,7 @@ section#benefits article h3 {
 	margin: 0;
 }
 
-section#features.active {
+div#features.active {
 @step: 0.7;
 @pause: 0.5;
 svg.open {
@@ -348,7 +348,7 @@ section#why_ibi {
 	text-align: center;
 }
 
-section#why_ibi article {
+section#why_ibi > article {
 	text-align: center;
 	box-sizing: border-box;
 	padding-left: calc(~'(100% - 600px)');
@@ -372,7 +372,7 @@ section#why_ibi article h2 {
  * Footer
 */
 
-footer {
+section {
 	padding: 0 calc(~'(100% - 1200px)' / 2);
 	background-image: url(../images/footer.jpg);
 	background-repeat: no-repeat;
@@ -381,18 +381,18 @@ footer {
 	padding-top: 100px;
 }
 
-footer article {
+section#footer article {
 	width: 50%;
 	margin: 0 auto;
 	text-align: center;
 	padding-bottom: 8em;
 }
 
-footer article h3 {
+section article h3 {
 	color: @color_text;
 }
 
-footer div.footer_information {
+section div.footer_information {
 	width: 30%;
 	margin: auto;
 	margin-right: 0;
@@ -400,16 +400,16 @@ footer div.footer_information {
 	text-align: center;
 }
 
-footer div.footer_information > a svg {
+section div.footer_information > a svg {
 	width: 7em;
 	height: 7em;
 }
 
-footer div.footer_information h3 {
+section div.footer_information h3 {
 	margin: 0;
 }
 
-footer div.footer_information a:last-of-type {
+section div.footer_information a:last-of-type {
 	.account-link(@color_gold);
 	display: inline-block;
 	margin-top: 1em;
