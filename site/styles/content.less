@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5 {
  * Open_account
 */
 
-section.open_account {
+section#open_account {
 	padding: 0 calc(~'(100% - 1200px)' / 2);
 	background-image: url(../images/header.jpg);
 	background-position: center bottom;
@@ -45,14 +45,14 @@ section.open_account {
 	padding-top: 105px;
 }
 
-section.open_account article {
+section#open_account article {
 	display: block;
 	width: 30%;
 	margin: 0 auto;
 	text-align: center;
 }
 
-section.open_account article h1 {
+section#open_account article h1 {
 	margin: 0;
 	font-weight: 400;
 	font-size: 4em;
@@ -61,21 +61,21 @@ section.open_account article h1 {
 	color: @color_white;
 }
 
-section.open_account article h1 strong {
+section#open_account article h1 strong {
 	font-weight: 700;
 }
 
-section.open_account article:first-of-type p {
+section#open_account article:first-of-type p {
 	font-size: 1.5em;
 	margin: 0;
 	padding: 1em 0;
 }
 
-section.open_account article p {
+section#open_account article p {
 	font-size: 1.2em;
 }
 
-section.open_account a.account {
+section#open_account a.account {
 	.account-link();
 
 	display: block;
@@ -88,29 +88,29 @@ section.open_account a.account {
  * Features
 */
 
-section.features {
+section#features {
 	padding: 0 calc(~'(100% - 1200px)' / 2);
 	text-align: center;
 }
 
-section.features h2 {
+section#features h2 {
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 100px;
 }
 
-section.features a.account {
+section#features a.account {
 	.account-link(@color_gold);
 }
 
-section.features ul {
+section#features ul {
 	margin: 0 auto;
 	padding: 0;
 	list-style: none;
 	padding-top: 1em;
 }
 
-section.features ul li {
+section#features ul li {
 	display: inline-block;
 	vertical-align: top;
 	width: 20%;
@@ -120,7 +120,7 @@ section.features ul li {
 	padding: 0 1em;
 }
 
-section.features ul li:after {
+section#features ul li:after {
 	content: '';
 	position: absolute;
 	height: 50px;
@@ -135,18 +135,18 @@ section.features ul li:after {
 	background-repeat: no-repeat;
 }
 
-section.features ul li:last-of-type:after {
+section#features ul li:last-of-type:after {
 	display: none;
 }
 
-section.features ul li svg {
+section#features ul li svg {
 	display: block;
 	margin: 0 auto;
 	width: 8em;
 	height: 8em;
 }
 
-section.features ul li h4 {
+section#features ul li h4 {
 	font-weight: 400;
 }
 
@@ -154,7 +154,7 @@ section.features ul li h4 {
  * Benefits
 */
 
-section.benefits {
+section#benefits {
 	padding: 0 calc(~'(100% - 1200px)' / 2);
 	background-image: url(../images/macbook.png), url(../images/benefits.jpg);
 	background-position: center 40%, center top;
@@ -163,13 +163,13 @@ section.benefits {
 	min-height: 900px;
 }
 
-section.benefits h1 {
+section#benefits h1 {
 	margin: 0;
 	text-align: center;
 	padding-top: 150px;
 }
 
-section.benefits > article {
+section#benefits > article {
 	@image_size: 550;
 	@spacing: 25;
 
@@ -190,7 +190,7 @@ section.benefits > article {
 	}
 }
 
-section.benefits article h3 {
+section#benefits article h3 {
 	margin: 0;
 }
 
@@ -287,22 +287,22 @@ svg.sign {
 /*
  * Section More benifits
 */
-section.benefits div.services {
+section#benefits div.services {
 	padding-top: 300px;
 	padding-bottom: 1em;
 }
 
-section.benefits div.services h2 {
+section#benefits div.services h2 {
 	text-align: center;
 	padding-bottom: 1em;
 }
 
-section.benefits div.services article ul {
+section#benefits div.services article ul {
 	display: block;
 	margin: 0;
 }
 
-section.benefits div.services article ul li {
+section#benefits div.services article ul li {
 	position: relative;
 	display: inline-block;
 	vertical-align: middle;
@@ -314,7 +314,7 @@ section.benefits div.services article ul li {
 	list-style: disc;
 }
 
-section.benefits div.services article ul li:after {
+section#benefits div.services article ul li:after {
 	content: '';
 	width: 0.3em;
 	height: 0.3em;
@@ -326,7 +326,7 @@ section.benefits div.services article ul li:after {
 	border-radius: 100%;
 }
 
-section.benefits div.services article ul li:nth-of-type(odd) {
+section#benefits div.services article ul li:nth-of-type(odd) {
 	width: 60%;
 }
 
@@ -334,7 +334,7 @@ section.benefits div.services article ul li:nth-of-type(odd) {
  * Section why_ibi
 */
 
-section.why_ibi {
+section#why_ibi {
 	padding: 0 calc(~'(100% - 1200px)' / 2);
 	padding-top: 150px;
 	background-image: url(../images/success.jpg);
@@ -345,13 +345,13 @@ section.why_ibi {
 	text-align: center;
 }
 
-section.why_ibi article {
+section#why_ibi article {
 	text-align: center;
 	box-sizing: border-box;
 	padding-left: calc(~'(100% - 600px)');
 }
 
-section.why_ibi a {
+section#why_ibi a {
 	.account-link(@color_gold);
 
 	margin-top: 1em;
@@ -360,8 +360,8 @@ section.why_ibi a {
 	padding: 1em 2.5em;
 }
 
-section.why_ibi article h1,
-section.why_ibi article h2 {
+section#why_ibi article h1,
+section#why_ibi article h2 {
 	margin: 0;
 }
 
