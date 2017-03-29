@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5 {
  * Open_account
 */
 
-section.open_account {
+section#open_account {
 	padding: 0 1em;
 	background-image: url(../images/mobile_header.jpg);
 	background-size: 100% auto;
@@ -45,13 +45,13 @@ section.open_account {
 	color: @color_white;
 }
 
-section.open_account article {
+section#open_account article {
 	display: block;
 	margin: 0 auto;
 	text-align: center;
 }
 
-section.open_account article h1 {
+section#open_account article h1 {
 	margin: 0;
 	font-weight: 400;
 	line-height: 100%;
@@ -59,7 +59,7 @@ section.open_account article h1 {
 	color: @color_white;
 }
 
-section.open_account a.account {
+section#open_account a.account {
 	.account-link();
 
 	display: block;
@@ -68,7 +68,7 @@ section.open_account a.account {
 	text-align: center;
 }
 
-section.open_account article:first-of-type p {
+section#open_account article:first-of-type p {
 	margin: 0;
 	padding: 1em 0;
 }
@@ -77,12 +77,12 @@ section.open_account article:first-of-type p {
  * Features
 */
 
-section.features {
+section#features {
 	padding: 0 1em;
 	text-align: center;
 }
 
-section.features a.account {
+section#features a.account {
 	.account-link(@color_gold);
 
 	display: block;
@@ -91,14 +91,14 @@ section.features a.account {
 	text-align: center;
 }
 
-section.features ul {
+section#features ul {
 	margin: 0 auto;
 	padding: 0;
 	list-style: none;
 	padding-top: 1em;
 }
 
-section.features ul li {
+section#features ul li {
 	display: block;
 	text-align: center;
 	position: relative;
@@ -106,14 +106,14 @@ section.features ul li {
 	padding: 1em 0;
 }
 
-section.features ul li svg {
+section#features ul li svg {
 	display: block;
 	margin: 0 auto;
 	width: 5em;
 	height: 5em;
 }
 
-section.features ul li h4 {
+section#features ul li h4 {
 	font-weight: 400;
 }
 
@@ -121,7 +121,7 @@ section.features ul li h4 {
  * Benefits
 */
 
-section.benefits {
+section#benefits {
 	padding: 1em;
 	background-image: url(../images/mobile_benefits.jpg), url(../images/mobile_benefits2.jpg);
 	background-position: center top, center bottom;
@@ -134,12 +134,12 @@ section.benefits {
 	position: relative;
 }
 
-section.benefits h1 {
+section#benefits h1 {
 	margin: 0;
 	padding-top: 2em;
 }
 
-section.benefits > article:first-of-type {
+section#benefits > article:first-of-type {
 	padding-bottom: 300px;
 
 	background-image: url(../images/macbook.png);
@@ -149,11 +149,12 @@ section.benefits > article:first-of-type {
 }
 
 /*
- * Section why_ibi
+ * Section#why_ibi
 */
 
-section.why_ibi {
+section#why_ibi {
 	padding: 1em;
+	padding-top: 80px;
 	background-image: url(../images/mobile_success.jpg);
 	background-size: 100% auto;
 	background-repeat: no-repeat;
@@ -163,12 +164,12 @@ section.why_ibi {
 	text-align: center;
 }
 
-section.why_ibi article h1,
-section.why_ibi article h2 {
+section#why_ibi article h1,
+section#why_ibi article h2 {
 	margin: 0;
 }
 
-section.why_ibi a {
+section#why_ibi a {
 	.account-link(@color_gold);
 
 	display: block;
@@ -183,6 +184,7 @@ section.why_ibi a {
 
 footer {
 	padding: 1em;
+	padding-top: 50px;
 	background-image: url(../images/mobile_footer.jpg);
 	background-repeat: no-repeat;
 	background-size: 100% auto;
