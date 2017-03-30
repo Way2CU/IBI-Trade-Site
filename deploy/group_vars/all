@@ -1,11 +1,11 @@
 ---
 site:
-  domain: sample.com
-  # subdomain: test
+  domain: ibitrade.ibi.co.il
+  subdomain: ibitrade
   # alias: domain.com
-  root: httpdocs
-  username: sample
-  caracal_branch: master
+  root: trade
+  username: ibi_site
+  caracal_branch: v0.3.x
   # ip_address: 0.0.0.0
   # owner: Some Person
   # plan: Unlimited
