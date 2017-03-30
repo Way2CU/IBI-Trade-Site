@@ -3,8 +3,8 @@ site:
   domain: ibitrade.ibi.co.il
   # subdomain: ibitrade
   # alias: domain.com
-  root: trade
-  username: ibi_site
+  root: httpdocs
+  username: ibi_trade
   caracal_branch: v0.3.x
   # ip_address: 0.0.0.0
   # owner: Some Person
