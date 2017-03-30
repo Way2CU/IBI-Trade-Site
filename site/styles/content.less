@@ -416,6 +416,28 @@ section div.footer_information a:last-of-type {
 }
 
 /*
+ * Copyright
+*/
+
+footer div.copyright {
+	background-color: @color_text;
+	color: @color_white;
+	text-align: center;
+
+	background-position: calc(~'50% - 100px') center;
+}
+
+footer div.copyright a {
+	text-decoration: none;
+	color: @color_gold;
+	transition: all 0.3s;
+
+	&:hover {
+		color: @color_menu_active;
+	}
+}
+
+/*
  * Ipad query
 */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -423,29 +445,29 @@ section div.footer_information a:last-of-type {
 		padding: 1em;
 	}
 
-	section.benefits {
+	section#benefits {
 		padding: 1em;
 		background-position: center 45%, 60% top;
 		background-size: 350px 350px, 1920px 900px;
 	}
 
-	section.benefits > article:nth-of-type(even) {
+	section#benefits > article:nth-of-type(even) {
 		margin-left: 340px;
 	}
 
-	section.benefits div.services {
+	section#benefits div.services {
 		padding-top: 100px;
 	}
 
-	section.why_ibi {
+	section#why_ibi {
 		padding: 1em;
 	}
 
-	footer {
+	section#footer {
 		padding: 1em;
 	}
 
-	footer div.footer_information {
+	section#footer div.footer_information {
 		margin-right: 1em;
 	}
 }
