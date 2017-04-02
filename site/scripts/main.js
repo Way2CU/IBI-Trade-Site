@@ -80,13 +80,13 @@ Site.on_load = function() {
 
 		if (Site.active_index != section_index) {
 			Site.links[Site.active_index].classList.remove('active');
-			Site.sections[Site.active_index].classList.remove('active');
+			// Site.sections[Site.active_index].classList.remove('active');
 			Site.links[section_index].classList.add('active');
 			Site.sections[section_index].classList.add('active');
 			Site.active_index = section_index;
 		}
 
-		if (position >= Site.section_features.offsetTop -150 && position <= Site.sections[1].offsetTop) {
+		if (position >= Site.section_features.offsetTop -400 && position <= Site.sections[1].offsetTop) {
 			Site.section_features.classList.add('active');
 		} else {
 			Site.section_features.classList.remove('active');
