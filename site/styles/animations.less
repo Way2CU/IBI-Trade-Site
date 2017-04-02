@@ -108,3 +108,63 @@
 	animation-iteration-count: 1;
 	animation-timing-function: ease-out;
 }
+
+@keyframes slide-from-right {
+	0%{
+		transform: translateX(100px);
+		opacity: 0;
+	}
+	100% {
+		tansform: translateX(0);
+		opacity: 1;
+	}
+}
+
+.animation-slide-from-right (@duration, @delay) {
+	animation-fill-mode: backwards;
+	animation-name: slide-from-right;
+	animation-duration: unit(@duration, s);
+	animation-delay: unit(@delay, s);
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+}
+
+@keyframes slide-from-top {
+	0%{
+		transform: translateY(-100px);
+		opacity: 0;
+	}
+	100% {
+		tansform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.animation-slide-from-top (@duration, @delay) {
+	animation-fill-mode: backwards;
+	animation-name: slide-from-top;
+	animation-duration: unit(@duration, s);
+	animation-delay: unit(@delay, s);
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+}
+
+@keyframes slide-from-bottom {
+	0%{
+		transform: translateY(100px);
+		opacity: 0;
+	}
+	100% {
+		tansform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.animation-slide-from-bottom (@duration, @delay) {
+	animation-fill-mode: backwards;
+	animation-name: slide-from-bottom;
+	animation-duration: unit(@duration, s);
+	animation-delay: unit(@delay, s);
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+}
