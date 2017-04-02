@@ -150,52 +150,11 @@ div#features ul li h4 {
 }
 
 /*
- * Benefits
+ * Features animations
 */
 
-section#benefits {
-	padding: 0 calc(~'(100% - 1200px)' / 2);
-	background-image: url(../images/macbook.png), url(../images/benefits.jpg);
-	background-position: center 40%, center top;
-	background-repeat: no-repeat;
-	color: @color_text;
-	min-height: 900px;
-}
-
-section#benefits h1 {
-	margin: 0;
-	text-align: center;
-	padding-top: 150px;
-}
-
-section#benefits > article {
-	@image_size: 550;
-	@spacing: 25;
-
-	display: inline-block;
-	max-width: unit((1200 - @image_size) / 2 - @spacing, px);
-	vertical-align: middle;
-	padding-top: 2em;
-	text-align: center;
-
-	&:nth-of-type(even) {
-		margin-left: unit(@image_size + @spacing * 2, px);
-	}
-
-	&:first-of-type {
-		display: block;
-		max-width: unit(@image_size, px);
-		margin: 0 auto;
-	}
-}
-
-section#benefits article h3 {
-	margin: 0;
-}
-
-div#features.active {
-@step: 0.7;
-@pause: 0.5;
+@step: 0.5;
+@pause: 0;
 svg.open {
 	path:nth-of-type(2),
 	path:nth-of-type(3) {
@@ -284,13 +243,68 @@ svg.sign {
 
 }
 
+div#features {
+	path, g {
+		animation-play-state: paused;
+	}
+}
+
+div#features.active {
+	path, g {
+		animation-play-state: running;
+	}
 }
 
 /*
- * Section More benifits
+ * Benefits
 */
+
+section#benefits {
+	padding: 0 calc(~'(100% - 1200px)' / 2);
+	background-image: url(../images/macbook.png), url(../images/benefits.jpg);
+	background-position: center 350px, center top;
+	background-repeat: no-repeat;
+	color: @color_text;
+	min-height: 900px;
+}
+
+section#benefits h1 {
+	margin: 0;
+	text-align: center;
+	padding-top: 150px;
+}
+
+section#benefits > article {
+	@image_size: 550;
+	@spacing: 25;
+
+	display: inline-block;
+	max-width: unit((1200 - @image_size) / 2 - @spacing, px);
+	vertical-align: middle;
+	padding-top: 2em;
+	text-align: center;
+
+	&:nth-of-type(even) {
+		margin-left: unit(@image_size + @spacing * 2, px);
+	}
+
+	&:first-of-type {
+		display: block;
+		max-width: unit(@image_size, px);
+		margin: 0 auto;
+	}
+}
+
+section#benefits article h3 {
+	margin: 0;
+}
+
+/*
+ * Benifits services
+*/
+
 section#benefits div.services {
-	padding-top: 300px;
+	padding-top: 200px;
 	padding-bottom: 1em;
 }
 
@@ -333,6 +347,27 @@ section#benefits div.services article ul li:nth-of-type(odd) {
 }
 
 /*
+ * Benifits animation
+*/
+
+section#benefits.active > article:first-of-type {
+	.animation-slide-from-top(@step, @delay);
+}
+
+section#benefits.active > article:nth-of-type(2) {
+	.animation-slide-from-right(@step, @delay + 0.5);
+}
+section#benefits.active > article:nth-of-type(3) {
+	.animation-slide-from-right(@step, @delay + 0.75);
+}
+section#benefits.active > article:nth-of-type(4) {
+	.animation-slide-from-right(@step, @delay + 1);
+}
+section#benefits.active > article:nth-of-type(5) {
+	.animation-slide-from-right(@step, @delay + 1.25);
+}
+
+/*
  * Section why_ibi
 */
 
@@ -368,6 +403,25 @@ section#why_ibi article h2 {
 }
 
 /*
+ * Why ibi animtaions
+*/
+
+section#why_ibi article {
+	.animation-slide-from-bottom(@step, @pause);
+	animation-play-state: paused;
+}
+
+section#why_ibi.active article,
+section#why_ibi.active a {
+	animation-play-state: running;
+}
+
+section#why_ibi a {
+	.animation-slide-from-bottom(@step, @pause + 0.5);
+	animation-play-state: paused;
+}
+
+/*
  * Footer
 */
 
@@ -384,7 +438,12 @@ section#footer article {
 	width: 50%;
 	margin: 0 auto;
 	text-align: center;
-	padding-bottom: 8em;
+	padding-bottom: 3em;
+}
+
+section#footer article h1,
+section#footer article p {
+	margin: 0;
 }
 
 section article h3 {
@@ -397,6 +456,7 @@ section div.footer_information {
 	margin-right: 0;
 	padding-bottom: 300px;
 	text-align: center;
+	font-size: 1.2em;
 }
 
 section div.footer_information > a svg {
@@ -406,12 +466,25 @@ section div.footer_information > a svg {
 
 section div.footer_information h3 {
 	margin: 0;
+	line-height: 100%;
 }
 
 section div.footer_information a:last-of-type {
 	.account-link(@color_gold);
 	display: inline-block;
 	margin-top: 1em;
+}
+
+/*
+ * Footer animations
+*/
+
+section#footer article {
+	.animation-scale-fade(@step, @pause);
+	animation-play-state: paused;
+}
+section#footer.active article {
+	animation-play-state: running;
 }
 
 /*
