@@ -31,6 +31,9 @@ h1, h2, h3, h4, h5 {
 }
 
 
+@step: 0.5;
+@pause: 0;
+
 /**
  * Open_account
  */
@@ -81,6 +84,23 @@ section#open_account a.account {
 	width: 150px;
 	margin: 0 auto;
 	text-align: center;
+}
+
+/*
+ * Open account animations
+*/
+
+section#open_account article:first-of-type {
+	.animation-slide-from-right(@step, @pause + 1);
+}
+
+section#open_account article:last-of-type {
+	.animation-slide-from-left(@step, @pause + 1);
+}
+
+
+section#open_account a {
+	.animation-scale-fade(@step, @pause + 1.5);
 }
 
 /*
@@ -152,9 +172,6 @@ div#features ul li h4 {
 /*
  * Features animations
 */
-
-@step: 0.5;
-@pause: 0;
 svg.open {
 	path:nth-of-type(2),
 	path:nth-of-type(3) {
@@ -417,7 +434,7 @@ section#why_ibi.active a {
 }
 
 section#why_ibi a {
-	.animation-slide-from-bottom(@step, @pause + 0.5);
+	.animation-slide-from-bottom(@step, @pause);
 	animation-play-state: paused;
 }
 
