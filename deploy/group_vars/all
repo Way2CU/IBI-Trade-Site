@@ -2,7 +2,7 @@
 site:
   domain: ibitrade.ibi.co.il
   # subdomain: ibitrade
-  alias: ibi-trade.ibi.co.il
+  # alias: ibi-trade.ibi.co.il
   root: httpdocs
   username: ibi_trade
   caracal_branch: v0.3.x
