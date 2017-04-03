@@ -6,17 +6,17 @@
  * Authors: Iliya Melishev, Mladen Mijatov
  */
 
- @keyframes fly-in {
- 	from {
+@keyframes fly-in {
+	from {
 		opacity: 0;
 		transform: translate(20px, 20px);
- 	}
+	}
 
- 	to {
+	to {
 		opacity: 1;
 		transform: translate(0, 0);
- 	}
- }
+	}
+}
 
 .animation-fly-in(@duration, @delay) {
 	animation-fill-mode: backwards;
@@ -46,11 +46,13 @@
 
 @keyframes scale-horizontal {
 	from {
-		transform: scaleX(0);
+		opacity: 0;
+		transform: scale(0, 1);
 	}
 
 	to {
-		transform: scaleX(1);
+		opacity: 1;
+		transform: scale(1, 1);
 	}
 }
 
@@ -188,3 +190,20 @@
 	animation-iteration-count: 1;
 	animation-timing-function: ease-out;
 }
+
+@keyframes text2-animation {
+	0% { opacity: 0; transform: scale(1.3); }
+	28% { opacity: 0; transform: scale(1.3); } 
+	33% { opacity: 1; transform: scale(1); }
+	95% { opacity: 1; transform: scale(1); }
+	100% { opacity: 0; transform: scale(0.7); }
+}
+
+@keyframes text3-animation {
+	0% { opacity: 0; transform: scale(1.3); }
+	61% { opacity: 0; transform: scale(1.3); } 
+	66% { opacity: 1; transform: scale(1); }
+	95% { opacity: 1; transform: scale(1); }
+	100% { opacity: 0; transform: scale(0.7); }
+}
+

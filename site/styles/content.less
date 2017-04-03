@@ -13,11 +13,14 @@ h1, h2, h3, h4, h5 {
 	color: @color_blue;
 }
 
-.account-link(@text_color: @color_white) {
-	padding: 1em 1.5em;
+.account-link(@text_color: @color_white, @background_color: #133550) {
+	position: relative;
+	display: inline-block;
+	padding: 1em 2em;
+
 	border: 2px solid @color_gold;
 	border-radius: 35px;
-	background-color: transparent;
+	background-color: @background_color;
 
 	color: @text_color;
 	font-size: 1.2em;
@@ -25,11 +28,61 @@ h1, h2, h3, h4, h5 {
 	text-decoration: none;
 
 	transition: all 0.3s;
+	overflow: hidden;
+
+	&:before {
+		content: attr(data-text2);
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 1em 1.5em;
+
+		border-radius: 35px;
+		background-color: @background_color;
+		color: @text_color;
+		color: red;
+
+		animation-fill-mode: both;
+		animation-name: text2-animation;
+		animation-duration: 7.5s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
+	}
+
+	&:after {
+		content: attr(data-text3);
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 1em 1.5em;
+
+		border-radius: 35px;
+		background-color: @background_color;
+		color: @text_color;
+		color: green;
+
+		animation-fill-mode: both;
+		animation-name: text3-animation;
+		animation-duration: 7.5s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
+	}
 
 	&:hover {
 		border-color: @color_white;
 		background-color: @color_gold;
 		color: @color_white;
+		animation-name: none;
+	}
+
+	&:hover:before,
+	&:hover:after {
+		animation-name: none;
+		opacity: 0;
 	}
 }
 
@@ -93,10 +146,6 @@ section#open_account article:last-of-type {
 	.animation-slide-from-left(@step, @pause + 1);
 }
 
-section#open_account a {
-	.animation-scale-fade(@step, @pause + 1.5);
-}
-
 /**
  * Features
  */
@@ -112,7 +161,7 @@ div#features h2 {
 }
 
 div#features a.account {
-	.account-link(@color_gold);
+	.account-link(@color_gold, @color_white);
 }
 
 div#features ul {
@@ -404,7 +453,7 @@ section#why_ibi > article {
 }
 
 section#why_ibi a {
-	.account-link(@color_gold);
+	.account-link(@color_gold, @color_white);
 
 	margin-top: 1em;
 	display: inline-block;
@@ -480,7 +529,7 @@ section div.footer_information h3 {
 }
 
 section div.footer_information a:last-of-type {
-	.account-link(@color_gold);
+	.account-link(@color_gold, @color_white);
 	display: inline-block;
 	margin-top: 1em;
 }
