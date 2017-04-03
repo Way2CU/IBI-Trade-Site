@@ -151,10 +151,7 @@
 
 				<!-- Logo text and account link -->
 				<div class="footer_information">
-					<a href="#">
-						<cms:svg file="site-sprite" symbol="icon-ibi-trade-logo"/>
-					</a>
-
+					<cms:svg file="site-sprite.svg" symbol="icon-ibi-trade-logo"/>
 					<h3><cms:text constant="why_open" /></h3>
 
 					<a href="http://ibi.mywizsupport.com/tofes/">

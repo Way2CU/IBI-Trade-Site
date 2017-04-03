@@ -68,7 +68,7 @@ Site.on_load = function() {
 		Site.offsets.push(Site.sections[i].offsetTop);
 
 	window.addEventListener('scroll', function(event){
-		var position = window.scrollY +400;
+		var position = window.pageYOffset + 400;
 		var section_index = 0;
 		var offsets = Site.offsets;
 

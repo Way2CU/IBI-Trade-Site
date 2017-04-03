@@ -1,9 +1,9 @@
 /**
  * Content Style Sheet
- * IBI-Trade lp
+ * IBI-Trade Landing Page
  *
  * Copyright (c) 2017. by Way2CU, http://way2cu.com
- * Authors: Iliya Melishev
+ * Authors: Iliya Melishev, Mladen Mijatov
  */
 
 @step: 0.5;
@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5 {
 }
 
 /**
- * Open_account
+ * New account
  */
 section#open_account {
 	padding: 0 calc(~'(100% - 1200px)' / 2);
@@ -85,10 +85,6 @@ section#open_account a.account {
 	text-align: center;
 }
 
-/*
- * Open account animations
-*/
-
 section#open_account article:first-of-type {
 	.animation-slide-from-right(@step, @pause + 1);
 }
@@ -97,15 +93,13 @@ section#open_account article:last-of-type {
 	.animation-slide-from-left(@step, @pause + 1);
 }
 
-
 section#open_account a {
 	.animation-scale-fade(@step, @pause + 1.5);
 }
 
-/*
+/**
  * Features
-*/
-
+ */
 div#features {
 	padding: 0 calc(~'(100% - 1200px)' / 2);
 	text-align: center;
@@ -168,9 +162,6 @@ div#features ul li h4 {
 	font-weight: 400;
 }
 
-/*
- * Features animations
-*/
 svg.open {
 	path:nth-of-type(2),
 	path:nth-of-type(3) {
@@ -256,7 +247,6 @@ svg.sign {
 		&:nth-of-type(3) { .animation-scale-horizontal(@step, @delay4 + @step + @step + @t * 3); }
 		&:nth-of-type(4) { .animation-scale-horizontal(@step, @delay4 + @step + @step + @t * 4); }
 	}
-
 }
 
 div#features {
@@ -271,10 +261,9 @@ div#features.active {
 	}
 }
 
-/*
+/**
  * Benefits
-*/
-
+ */
 section#benefits {
 	padding: 0 calc(~'(100% - 1200px)' / 2);
 	background-image: url(../images/macbook.png), url(../images/benefits.jpg);
@@ -317,7 +306,7 @@ section#benefits article h3 {
 
 /*
  * Benifits services
-*/
+ */
 
 section#benefits div.services {
 	padding-top: 200px;
@@ -362,9 +351,9 @@ section#benefits div.services article ul li:nth-of-type(odd) {
 	width: 60%;
 }
 
-/*
+/**
  * Benifits animation
-*/
+ */
 
 section#benefits > article:first-of-type {
 	.animation-slide-from-top(@step, @delay);
@@ -373,12 +362,15 @@ section#benefits > article:first-of-type {
 section#benefits > article:nth-of-type(2) {
 	.animation-slide-from-right(@step, @delay + 0.5);
 }
+
 section#benefits > article:nth-of-type(3) {
 	.animation-slide-from-right(@step, @delay + 0.75);
 }
+
 section#benefits > article:nth-of-type(4) {
 	.animation-slide-from-right(@step, @delay + 1);
 }
+
 section#benefits > article:nth-of-type(5) {
 	.animation-slide-from-right(@step, @delay + 1.25);
 }
@@ -391,10 +383,9 @@ section#benefits.active > article {
 	animation-play-state: running;
 }
 
-/*
- * Section why_ibi
-*/
-
+/**
+ * Why IBI
+ */
 section#why_ibi {
 	padding: 0 calc(~'(100% - 1200px)' / 2);
 	padding-top: 150px;
@@ -426,10 +417,6 @@ section#why_ibi article h2 {
 	margin: 0;
 }
 
-/*
- * Why ibi animtaions
-*/
-
 section#why_ibi article {
 	.animation-slide-from-bottom(@step, @pause);
 	animation-play-state: paused;
@@ -445,10 +432,9 @@ section#why_ibi a {
 	animation-play-state: paused;
 }
 
-/*
+/**
  * Footer
-*/
-
+ */
 section {
 	padding: 0 calc(~'(100% - 1200px)' / 2);
 	background-image: url(../images/footer.jpg);
@@ -499,22 +485,21 @@ section div.footer_information a:last-of-type {
 	margin-top: 1em;
 }
 
-/*
+/**
  * Footer animations
-*/
-
+ */
 section#footer article {
 	.animation-slide-from-bottom(@step, @pause);
 	animation-play-state: paused;
 }
+
 section#footer.active article {
 	animation-play-state: running;
 }
 
-/*
+/**
  * Copyright
-*/
-
+ */
 footer div.copyright {
 	background-color: @color_text;
 	color: @color_white;
@@ -533,9 +518,9 @@ footer div.copyright a {
 	}
 }
 
-/*
- * Ipad query
-*/
+/**
+ * Tablet support
+ */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 	section {
 		padding: 1em;
