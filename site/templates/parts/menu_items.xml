@@ -11,7 +11,7 @@
 	<a href="#footer">
 		<cms:text constant="menu_trade"/>
 	</a>
-	<a href="http://ibi.mywizsupport.com/tofes/" class="account">
+	<a href="https://ibi.mywizsupport.com/tofes/" class="account">
 		<cms:text constant="menu_account"/>
 	</a>
 </document>

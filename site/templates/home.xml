@@ -44,7 +44,7 @@
 
 				<!-- outside URL link -->
 				<a
-					href="http://ibi.mywizsupport.com/tofes/"
+					href="https://ibi.mywizsupport.com/tofes/"
 					class="account"
 					data-text2="link_account_open2"
 					data-text3="link_account_open3"
@@ -68,7 +68,7 @@
 
 				<!-- Outside URL link -->
 				<a
-					href="http://ibi.mywizsupport.com/tofes/"
+					href="https://ibi.mywizsupport.com/tofes/"
 					class="account"
 					data-text2="link_account_open2"
 					data-text3="link_account_open3"
@@ -146,7 +146,7 @@
 
 				<!-- Outside URL link -->
 				<a
-					href="http://ibi.mywizsupport.com/tofes/"
+					href="https://ibi.mywizsupport.com/tofes/"
 					class="acction"
 					data-text2="link_account_open2"
 					data-text3="link_account_open3"
@@ -175,7 +175,7 @@
 					<h3><cms:text constant="why_open" /></h3>
 
 					<a
-						href="http://ibi.mywizsupport.com/tofes/"
+						href="https://ibi.mywizsupport.com/tofes/"
 						class="account"
 						data-text2="link_account_open2"
 						data-text3="link_account_open3"
