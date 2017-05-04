@@ -45,12 +45,29 @@ Site.is_mobile = function() {
 	return result;
 };
 
+// Show dialog with content from DOM
+var dialog_show = function(event){
+	event.preventDefault();
+	Site.dialog.open();
+}
+
 /**
  * Function called when document and images have been completely loaded.
  */
 Site.on_load = function() {
 	if (Site.is_mobile())
 		Site.mobile_menu = new Caracal.MobileMenu();
+
+	// fair price link conntect event click to load dialog form
+	Site.fair_price_link = document.querySelectorAll('a.fair_price');
+
+	// Connect eventListener to links
+	for (var i = 0; i < Site.fair_price_link.length; i++)
+		Site.fair_price_link[i].addEventListener('click', dialog_show);
+
+	// Dialog form with content from DOM
+	Site.dialog = new Caracal.Dialog();
+	Site.dialog.set_content_from_dom('div#trade_form');
 
 	// implement scroll event
 	Site.links = document.querySelectorAll('nav#main a:not(.account)');
@@ -68,7 +85,7 @@ Site.on_load = function() {
 		Site.offsets.push(Site.sections[i].offsetTop);
 
 	window.addEventListener('scroll', function(event){
-		var position = window.pageYOffset + 400;
+		var position = window.pageYOffset + 300;
 		var section_index = 0;
 		var offsets = Site.offsets;
 
@@ -86,7 +103,7 @@ Site.on_load = function() {
 			Site.active_index = section_index;
 		}
 
-		if (position >= Site.section_features.offsetTop -400 && position <= Site.sections[1].offsetTop) {
+		if (position >= Site.section_features.offsetTop -200 && position <= Site.sections[1].offsetTop) {
 			Site.section_features.classList.add('active');
 		} else {
 			Site.section_features.classList.remove('active');
