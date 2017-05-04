@@ -89,19 +89,21 @@ h1, h2, h3, h4, h5 {
 .fair_price(){
 	display: inline-block;
 	vertical-align: middle;
-	color: white;
-	background-color: @color_blue;
-	border: 1px solid white;
-	border-radius: 15px;
+	color: @color_blue;
+	background-color: white;
+	border: 2px solid @color_blue;
+	border-radius: 35px;
 	text-decoration: none;
-	padding: 1em 2em;
+	padding: 1em 2.8em;
 	font-weight: 700;
 	font-size: 1.2em;
 	margin-right: 1em;
 	transition: all 0.3s;
 
 	&:hover {
-		transform: translateY(-10px);
+		background-color: @color_blue;
+		color: white;
+		border: 2px solid white;
 	}
 }
 
@@ -490,7 +492,7 @@ section#why_ibi a.fair_price {
 	.fair_price();
 	display: block;
 	width: 100px;
-	margin-right: 210px;
+	margin-right: 195px;
 	margin-top: 1em;
 }
 
@@ -504,14 +506,8 @@ section#why_ibi article {
 	animation-play-state: paused;
 }
 
-section#why_ibi.active article,
-section#why_ibi.active a.account {
+section#why_ibi.active article {
 	animation-play-state: running;
-}
-
-section#why_ibi a.account {
-	.animation-slide-from-bottom(@step, @pause);
-	animation-play-state: paused;
 }
 
 /**
