@@ -84,6 +84,27 @@ h1, h2, h3, h4, h5 {
 	}
 }
 
+// Fair price link style
+
+.fair_price(){
+	display: inline-block;
+	vertical-align: middle;
+	color: white;
+	background-color: @color_blue;
+	border: 1px solid white;
+	border-radius: 15px;
+	text-decoration: none;
+	padding: 1em 2em;
+	font-weight: 700;
+	font-size: 1.2em;
+	margin-right: 1em;
+	transition: all 0.3s;
+
+	&:hover {
+		transform: translateY(-10px);
+	}
+}
+
 /**
  * New account
  */
@@ -94,7 +115,7 @@ section#open_account {
 	background-repeat: no-repeat;
 	min-height: 700px;
 	color: @color_white;
-	padding-top: 105px;
+	padding-top: 65px;
 }
 
 section#open_account article {
@@ -162,6 +183,10 @@ div#features a.account {
 	.account-link(@color_gold, @color_white);
 	display: inline-block;
 	vertical-align: middle;
+}
+
+div#features a.fair_price {
+	.fair_price();
 }
 
 div#features ul {
@@ -452,13 +477,21 @@ section#why_ibi > article {
 	padding-left: calc(~'(100% - 600px)');
 }
 
-section#why_ibi a {
+section#why_ibi > a.account {
 	.account-link(@color_gold, @color_white);
 
 	margin-top: 1em;
 	display: inline-block;
 	margin-left: calc(~'(100% - 600px)');
 	padding: 1em 2.5em;
+}
+
+section#why_ibi a.fair_price {
+	.fair_price();
+	display: block;
+	width: 100px;
+	margin-right: 210px;
+	margin-top: 1em;
 }
 
 section#why_ibi article h1,
@@ -472,11 +505,11 @@ section#why_ibi article {
 }
 
 section#why_ibi.active article,
-section#why_ibi.active a {
+section#why_ibi.active a.account {
 	animation-play-state: running;
 }
 
-section#why_ibi a {
+section#why_ibi a.account {
 	.animation-slide-from-bottom(@step, @pause);
 	animation-play-state: paused;
 }
@@ -518,7 +551,7 @@ section div.footer_information {
 	font-size: 1.2em;
 }
 
-section div.footer_information > a svg {
+section div.footer_information > a.account svg {
 	width: 7em;
 	height: 7em;
 }
@@ -528,9 +561,15 @@ section div.footer_information h3 {
 	line-height: 100%;
 }
 
-section div.footer_information a:last-of-type {
+section div.footer_information a.account {
 	.account-link(@color_gold, @color_white);
 	display: inline-block;
+	margin-top: 1em;
+}
+
+section div.footer_information a.fair_price {
+	.fair_price();
+	margin: 0;
 	margin-top: 1em;
 }
 
