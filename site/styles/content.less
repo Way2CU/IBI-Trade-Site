@@ -607,6 +607,50 @@ footer div.copyright a {
 }
 
 /**
+ * Dialog ibi form
+ */
+div#trade_form form {
+	box-sizing: border-box;
+	padding: 1em;
+	font-size: 1.2em;
+}
+
+div#trade_form form input {
+	padding: 1em;
+	box-sizing: border-box;
+	border: 1px solid fade(@color_blue, 50%);
+	color: black;
+	width: 100%;
+	margin-bottom: 1em;
+	transition: all 0.3s;
+
+	&:hover,
+	&:focus {
+		border: 1px solid @color_blue;
+	}
+}
+
+div#trade_form form div.submit {
+	text-align: center;
+	padding: 1em 0;
+}
+
+div#trade_form form input[name="submit"] {
+	width: 50%;
+	color: black;
+	font-weight: 700;
+	border: 1px solid fade(@color_blue, 50%);
+	text-align: center;
+	margin: 0;
+	transition: all 0.3s;
+
+	&:hover {
+		background-color: @color_blue;
+		color: white;
+	}
+}
+
+/**
  * Tablet support
  */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {

@@ -217,7 +217,7 @@
 			<div><input max="10" maxlength="10" name="phone" type="tel" placeholder="טלפון נייד" /></div>
 			<div>
 			אני מסכים/ה לתנאי השימוש ולקבלת עדכונים, הצעות והטבות במייל ובמסרונים מחברות קבוצת אי.בי.אי.</div>
-			<div><input dir="rtl" name="submit" type="submit" value="שלח" /></div>
+			<div class="submit"><input dir="rtl" name="submit" type="submit" value="שלח" /></div>
 			<input name="oid" type="hidden" value="00Db0000000dGDf" /> <input name="retURL" type="hidden" value="" /> <input name="lead_source" type="hidden" value="אינטרנט" /> <input name="00Nb000000AOOfb" type="hidden" value="מאושר" /> <input name="00Nb000000AFY8A" type="hidden" value="701b0000000ljQt" /> <input name="recordType" type="hidden" value="012b00000009VaNAAU" /></form></div>
 
 		</body>
