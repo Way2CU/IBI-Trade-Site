@@ -59,11 +59,11 @@ Site.on_load = function() {
 		Site.mobile_menu = new Caracal.MobileMenu();
 
 	// fair price link conntect event click to load dialog form
-	Site.fair_price_link = document.querySelectorAll('a.fair_price');
+	Site.account = document.querySelectorAll('a.account');
 
 	// Connect eventListener to links
-	for (var i = 0; i < Site.fair_price_link.length; i++)
-		Site.fair_price_link[i].addEventListener('click', dialog_show);
+	for (var i = 0; i < Site.account.length; i++)
+		Site.account[i].addEventListener('click', dialog_show);
 
 	// Dialog form with content from DOM
 	Site.dialog = new Caracal.Dialog();
