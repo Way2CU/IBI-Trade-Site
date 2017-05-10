@@ -215,6 +215,7 @@
 			<div>לפרטים נוספים וקבלת<br /> הצעת מחיר למסחר עצמאי:</div>
 			<div><input maxlength="80" name="last_name" type="text" placeholder="שם מלא" /></div>
 			<input name="Campaign_ID" type="hidden" value="701b0000000loFG" />
+			<input name="00Nb000000AFY8A" type="hidden" value="701b0000000loFG" />
 			<div><input max="10" maxlength="10" name="phone" type="tel" placeholder="טלפון נייד" /></div>
 			<div>
 			אני מסכים/ה לתנאי השימוש ולקבלת עדכונים, הצעות והטבות במייל ובמסרונים מחברות קבוצת אי.בי.אי.</div>
