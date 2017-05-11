@@ -67,7 +67,7 @@ Site.on_load = function() {
 
 	// Dialog form with content from DOM
 	Site.dialog = new Caracal.Dialog();
-	Site.dialog.set_content_from_dom('div#trade_form');
+	Site.dialog.set_content_from_dom('form#trade_form');
 
 	// implement scroll event
 	Site.links = document.querySelectorAll('nav#main a:not(.account)');

@@ -607,13 +607,16 @@ footer div.copyright a {
 /**
  * Dialog ibi form
  */
-div#trade_form form {
+#trade_form {
 	box-sizing: border-box;
 	padding: 1em;
 	font-size: 1.2em;
 }
+#trade_form div.form-title_.rtl {
+	padding-bottom: 1em;
+}
 
-div#trade_form form input {
+#trade_form input {
 	padding: 1em;
 	box-sizing: border-box;
 	border: 1px solid fade(@color_blue, 50%);
@@ -628,12 +631,14 @@ div#trade_form form input {
 	}
 }
 
-div#trade_form form div.submit {
+#trade_form div.yes_,
+#trade_form div.submit {
 	text-align: center;
 	padding: 1em 0;
 }
 
-div#trade_form form input[name="submit"] {
+
+#trade_form input[name="submit"] {
 	width: 50%;
 	color: black;
 	font-weight: 700;

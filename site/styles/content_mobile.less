@@ -225,6 +225,57 @@ section#footer div.footer_information a:last-of-type {
 	text-align: center;
 }
 
+/**
+ * Dialog ibi form
+ */
+
+div.dialog {
+	min-width: 90vw;
+}
+#trade_form {
+	box-sizing: border-box;
+	padding: 1em;
+	font-size: 1.2em;
+}
+#trade_form div.form-title_.rtl {
+	padding-bottom: 1em;
+}
+
+#trade_form input {
+	padding: 1em;
+	box-sizing: border-box;
+	border: 1px solid fade(@color_blue, 50%);
+	color: black;
+	width: 100%;
+	margin-bottom: 1em;
+
+	&:focus {
+		border: 1px solid @color_blue;
+	}
+}
+
+#trade_form div.yes_,
+#trade_form div.submit {
+	text-align: center;
+	padding: 1em 0;
+}
+
+
+#trade_form input[name="submit"] {
+	width: 50%;
+	color: black;
+	font-weight: 700;
+	border: 1px solid fade(@color_blue, 50%);
+	text-align: center;
+	margin: 0;
+	transition: all 0.3s;
+
+	&:hover {
+		background-color: @color_blue;
+		color: white;
+	}
+}
+
 /*
  * Copyright
 */
