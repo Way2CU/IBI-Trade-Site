@@ -211,17 +211,45 @@
 			</footer>
 
 			<!-- Ibi Form -->
-			<div id="trade_form"><form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-			<div>לפרטים נוספים וקבלת<br /> הצעת מחיר למסחר עצמאי:</div>
-			<div><input maxlength="80" name="last_name" type="text" placeholder="שם מלא" /></div>
-			<input name="Campaign_ID" type="hidden" value="701b0000000loFG" />
-			<input name="00Nb000000AFY8A" type="hidden" value="701b0000000loFG" />
-			<div><input max="10" maxlength="10" name="phone" type="tel" placeholder="טלפון נייד" /></div>
-			<div>
-			אני מסכים/ה לתנאי השימוש ולקבלת עדכונים, הצעות והטבות במייל ובמסרונים מחברות קבוצת אי.בי.אי.</div>
-			<div class="submit"><input dir="rtl" name="submit" type="submit" value="שלח" /></div>
-			<input name="oid" type="hidden" value="00Db0000000dGDf" /> <input name="retURL" type="hidden" value="" /> <input name="lead_source" type="hidden" value="אינטרנט" /> <input name="00Nb000000AOOfb" type="hidden" value="מאושר" /> <input name="00Nb000000AFY8A" type="hidden" value="701b0000000ljQt" /> <input name="recordType" type="hidden" value="012b00000009VaNAAU" /></form></div>
+			<div class="form-container_">
+				<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+					<div class="form-title_ rtl">
+					לפרטים נוספים וקבלת
+					הצעת מחיר למסחר עצמאי:
+					</div>
 
+					<div class="nameField_">
+						<input id="last_name" maxlength="80" name="last_name" type="text" class="req rtl" placeholder="שם מלא"/>
+					</div>
+
+					<div class="phonefield_">
+						<input id="phone" maxlength="10" name="phone" type="tel" class="req" max="10" placeholder="טלפון נייד"/>
+					</div>
+
+					<div class="agree_ rtl">
+						<div class="cb on"></div>
+						<span>אני מסכים/ה לתנאי השימוש ולקבלת עדכונים, הצעות והטבות במייל ובמסרונים מחברות קבוצתאי.בי.אי. </span>
+					</div>
+
+					<div class="yes_ ">
+						<input dir="rtl" name="submit" type="submit" class="send_" value="שלח"/>
+					</div>
+
+					<input name="oid" type="hidden" value="00Db0000000dGDf" />
+					<input name="retURL" type="hidden" value="" />
+					<input name="lead_source" type="hidden" value="אינטרנט" />
+					<input name="Campaign_ID" type="hidden" value="701b0000000loFG" />
+					<input name="00Nb000000AFY8A" type="hidden" value="701b0000000loFG" />
+					<input name="recordType" type="hidden" value="012b00000009VaNAAU" />
+					<input name="00Nb000000AL953" type="hidden" value="XXXXXXXXXXXXXXX" /><p><span></span></p> <!--UTM Website URL-->
+					<input name="00Nb000000AL958" type="hidden" value="XXXXXXXXXXXXXXX" /><p><span></span></p> <!--UTM Campaign Source-->
+					<input name="00Nb000000AL95D" type="hidden" value="XXXXXXXXXXXXXXX" /><p><span></span></p> <!--UTM Campaign Medium-->
+					<input name="00Nb000000AL95I" type="hidden" value="XXXXXXXXXXXXXXX" /><p><span></span></p><!--UTM Campaign Name-->
+					<input name="00Nb000000AL95N" type="hidden" value="XXXXXXXXXXXXXXX" /><p><span></span></p><!--UTM Campaign Term-->
+					<input name="00Nb000000AL95S" type="hidden" value="XXXXXXXXXXXXXXX" /><p><span></span></p><!--UTM Campaign Content-->
+					<input name="00Nb000000AOOfb" type="hidden" value="XXXXXXXXXXXXXXX" /><p><span></span></p><!--אם לקוח מאשר דיוור ='מאושר'-->
+				</form>
+			</div>
 		</body>
 	</html>
 </document>
