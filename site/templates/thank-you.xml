@@ -210,45 +210,9 @@
 				</cms:template>
 			</footer>
 
-			<!-- Ibi Form -->
-
-			<!-- <a href="URL::make(array(), 'thankyou.xml')" cms:eval="href"> -->
-			<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" id="trade_form">
-				<div class="form-title_ rtl">
-					<cms:text constant="ibi_form_iagree"/>
-				</div>
-
-				<div class="nameField_">
-					<input id="last_name" maxlength="80" name="last_name" type="text" class="req rtl" placeholder="שם מלא"/>
-				</div>
-
-				<div class="phonefield_">
-					<input id="phone" maxlength="10" name="phone" type="tel" class="req" max="10" placeholder="טלפון נייד"/>
-				</div>
-
-				<div class="agree_ rtl">
-					<div class="cb on"/>
-					<span><cms:text constant="ibi_form_i_agree_to_terms"/></span>
-				</div>
-
-				<div class="yes_ ">
-					<input dir="rtl" name="submit" type="submit" class="send_" value="שלח"/>
-				</div>
-
-				<input name="oid" type="hidden" value="00Db0000000dGDf"/>
-				<input name="retURL" type="hidden" value="urlencode(URL::make(array(), 'thank-you.xml'))" cms:eval="value"/>
-				<input name="lead_source" type="hidden" value="¿¿¿¿¿¿¿"/>
-				<input name="Campaign_ID" type="hidden" value="701b0000000loFG"/>
-				<input name="00Nb000000AFY8A" type="hidden" value="701b0000000loFG"/>
-				<input name="recordType" type="hidden" value="012b00000009VaNAAU"/>
-				<input name="00Nb000000AL953" type="hidden" value="XXXXXXXXXXXXXXX" /><!--UTM Website URL-->
-				<input name="00Nb000000AL958" type="hidden" value="XXXXXXXXXXXXXXX" /><!--UTM Campaign Source-->
-				<input name="00Nb000000AL95D" type="hidden" value="XXXXXXXXXXXXXXX" /><!--UTM Campaign Medium-->
-				<input name="00Nb000000AL95I" type="hidden" value="XXXXXXXXXXXXXXX" /><!--UTM Campaign Name-->
-				<input name="00Nb000000AL95N" type="hidden" value="XXXXXXXXXXXXXXX" /><!--UTM Campaign Term-->
-				<input name="00Nb000000AL95S" type="hidden" value="XXXXXXXXXXXXXXX" /><!--UTM Campaign Content-->
-				<input name="00Nb000000AOOfb" type="hidden" value="XXXXXXXXXXXXXXX" /><!--¿¿ ¿¿¿¿ ¿¿¿¿ ¿¿¿¿¿ ='¿¿¿¿¿'-->
-			</form>
+			<div id="thankyou_submit">
+				<p>המידע התקבל בהצלחה!</p>
+			</div>
 		</body>
 	</html>
 </document>
