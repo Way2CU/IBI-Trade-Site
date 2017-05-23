@@ -110,6 +110,13 @@ Site.on_load = function() {
 		}
 
 	});
+
+	//Check if window path is thankyou and load dialog.
+	if (window.location.pathname == '/thank-you') {
+		var dialog_thankyou = new Caracal.Dialog();
+		dialog_thankyou.set_content_from_dom('div#thankyou_submit');
+		dialog_thankyou.show();
+	}
 };
 
 
