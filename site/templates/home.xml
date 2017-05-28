@@ -236,8 +236,8 @@
 				</div>
 
 				<input name="oid" type="hidden" value="00Db0000000dGDf"/>
-				<input name="retURL" type="hidden" value="urlencode(URL::make(array(), 'thank-you.xml'))" cms:eval="value"/>
-				<input name="lead_source" type="hidden" value="¿¿¿¿¿¿¿"/>
+				<input name="retURL" type="hidden" value="URL::make(array(), 'thank-you.xml')" cms:eval="value"/>
+				<input name="lead_source" type="hidden" value="אינטרנט"/>
 				<input name="Campaign_ID" type="hidden" value="701b0000000loFG"/>
 				<input name="00Nb000000AFY8A" type="hidden" value="701b0000000loFG"/>
 				<input name="recordType" type="hidden" value="012b00000009VaNAAU"/>
@@ -247,7 +247,7 @@
 				<input name="00Nb000000AL95I" type="hidden" value="XXXXXXXXXXXXXXX" /><!--UTM Campaign Name-->
 				<input name="00Nb000000AL95N" type="hidden" value="XXXXXXXXXXXXXXX" /><!--UTM Campaign Term-->
 				<input name="00Nb000000AL95S" type="hidden" value="XXXXXXXXXXXXXXX" /><!--UTM Campaign Content-->
-				<input name="00Nb000000AOOfb" type="hidden" value="XXXXXXXXXXXXXXX" /><!--¿¿ ¿¿¿¿ ¿¿¿¿ ¿¿¿¿¿ ='¿¿¿¿¿'-->
+				<input name="00Nb000000AOOfb" type="hidden" value="XXXXXXXXXXXXXXX" /><!--אם לקוח מאשר דיוור ='מאושר'-->
 			</form>
 		</body>
 	</html>
