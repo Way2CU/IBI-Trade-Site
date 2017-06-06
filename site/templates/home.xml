@@ -239,7 +239,6 @@
 				<input name="retURL" type="hidden" value="URL::make(array(), 'thank-you.xml')" cms:eval="value"/>
 				<input name="lead_source" type="hidden" value="אינטרנט"/>
 				<input name="Campaign_ID" type="hidden" value="701b0000000loFG"/>
-				<input name="00Nb000000AFY8A" type="hidden" value="701b0000000loFG"/>
 				<input name="recordType" type="hidden" value="012b00000009VaNAAU"/>
 				<input name="00Nb000000AL953" type="hidden" value="XXXXXXXXXXXXXXX" /><!--UTM Website URL-->
 				<input name="00Nb000000AL958" type="hidden" value="XXXXXXXXXXXXXXX" /><!--UTM Campaign Source-->
