@@ -228,7 +228,10 @@
 
 				<div class="agree_ rtl">
 					<div class="cb on"/>
+					<label>
+					<input type="checkbox" name="00Nb000000AOOfb" value="מאושר"/>
 					<span><cms:text constant="ibi_form_i_agree_to_terms"/></span>
+					</label>
 				</div>
 
 				<div class="yes_ ">
@@ -246,7 +249,6 @@
 				<input name="00Nb000000AL95I" type="hidden" value="XXXXXXXXXXXXXXX" /><!--UTM Campaign Name-->
 				<input name="00Nb000000AL95N" type="hidden" value="XXXXXXXXXXXXXXX" /><!--UTM Campaign Term-->
 				<input name="00Nb000000AL95S" type="hidden" value="XXXXXXXXXXXXXXX" /><!--UTM Campaign Content-->
-				<input name="00Nb000000AOOfb" type="hidden" value="XXXXXXXXXXXXXXX" /><!--אם לקוח מאשר דיוור ='מאושר'-->
 			</form>
 		</body>
 	</html>
