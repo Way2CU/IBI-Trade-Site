@@ -213,7 +213,7 @@
 			<!-- Ibi Form -->
 
 			<!-- <a href="URL::make(array(), 'thankyou.xml')" cms:eval="href"> -->
-			<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" id="trade_form">
+			<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" id="trade_form">
 				<div class="form-title_ rtl">
 					<cms:text constant="ibi_form_iagree"/>
 				</div>
